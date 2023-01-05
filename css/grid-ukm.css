@@ -1,0 +1,172 @@
+table, th, td {
+    border: 1px solid black;
+}
+td {
+    text-align: center;
+    padding: 5px;
+  }
+  .title,
+  .subtitle {
+    word-break: break-word;
+  }
+  
+  .title em,
+  .title span,
+  .subtitle em,
+  .subtitle span {
+    font-weight: inherit;
+  }
+  
+  .title sub,
+  .subtitle sub {
+    font-size: 0.75em;
+  }
+  
+  .title sup,
+  .subtitle sup {
+    font-size: 0.75em;
+  }
+  
+  .title .tag,
+  .subtitle .tag {
+    vertical-align: middle;
+  }
+  
+  .title {
+    color: #363636;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+  }
+  
+  .title strong {
+    color: inherit;
+    font-weight: inherit;
+  }
+  
+  .title + .highlight {
+    margin-top: -0.75rem;
+  }
+  
+  .title:not(.is-spaced) + .subtitle {
+    margin-top: -1.25rem;
+  }
+  
+  .title.is-1 {
+    font-size: 3rem;
+  }
+  
+  .title.is-2 {
+    font-size: 2.5rem;
+  }
+  
+  .title.is-3 {
+    font-size: 2rem;
+  }
+  
+  .title.is-4 {
+    font-size: 1.5rem;
+  }
+  
+  .title.is-5 {
+    font-size: 1.25rem;
+  }
+  
+  .title.is-6 {
+    font-size: 1rem;
+  }
+  
+  .title.is-7 {
+    font-size: 0.75rem;
+  }
+  
+  .subtitle {
+    color: #4a4a4a;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+  
+  .subtitle strong {
+    color: #363636;
+    font-weight: 600;
+  }
+  
+  .subtitle:not(.is-spaced) + .title {
+    margin-top: -1.25rem;
+  }
+  
+  .subtitle.is-1 {
+    font-size: 3rem;
+  }
+  
+  .subtitle.is-2 {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle.is-3 {
+    font-size: 2rem;
+  }
+  
+  .subtitle.is-4 {
+    font-size: 1.5rem;
+  }
+  
+  .subtitle.is-5 {
+    font-size: 1.25rem;
+  }
+  
+  .subtitle.is-6 {
+    font-size: 1rem;
+  }
+  
+  .subtitle.is-7 {
+    font-size: 0.75rem;
+  }
+  
+  .heading {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .highlight {
+    font-weight: 400;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  .highlight pre {
+    overflow: auto;
+    max-width: 100%;
+  }
+  
+  .number {
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 290486px;
+    display: inline-flex;
+    font-size: 1.25rem;
+    height: 2em;
+    justify-content: center;
+    margin-right: 1.5rem;
+    min-width: 2.5em;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    vertical-align: top;
+  }
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Make Magic Square with JavaScript">
+	  <meta name="keywords" content="Magic Square, Magic Js, Square Magic Js, JavaScript Magic">
+	  <meta name="author" content="U Kyaw Myint">
+    <title>Magic Square with JS</title>
+	<script src="./js/ukm_MagicSquare05.js"></script>
+	<link rel="stylesheet" href="./css/grid-ukm.css">
+	<link rel="stylesheet" href="./css/fontawesome.css"> 
+ <!--     <style type="text/css">
+		html {overflow-x: auto;}
+	</style> -->
+
+  </head>
+  <body>
+	  <section class="section">
+	    <div class="container">
+	      <p class="title">
+	        Magic Square <span class="subtitle">with Java Script</span>
+	      </p>
+		  <p class="subtitle">
+	        <i class="fa fa-magic" aria-hidden="true"></i> Lets do some magic with square and numbers <i class="fa fa-magic" aria-hidden="true"></i>
+	      </p>
+	      <!-- <p>Learn more about magic square <a href="https://en.wikipedia.org/wiki/Magic_square">here.</a></p> -->
+	      <p> Supported Numbers : 3 to 40 <br/><br/></p>
+	      <div class="field">
+				  <div class="control">
+				    <div class="select is-primary">
+				      <select id="number">
+				        <option>Select a number</option>
+				        <option value="3">3</option>
+				        <option value="4">4</option>
+				        <option value="5">5</option>
+				        <option value="6">6</option>
+				        <option value="7">7</option>
+				        <option value="8">8</option>
+				        <option value="9">9</option>
+				        <option value="10">10</option>
+				        <option value="11">11</option>
+				        <option value="12">12</option>
+				        <option value="13">13</option>
+				        <option value="14">14</option>
+				        <option value="15">15</option>
+				        <option value="16">16</option>
+				        <option value="17">17</option>
+				        <option value="18">18</option>
+				        <option value="19">19</option>
+				        <option value="20">20</option>
+				        <option value="21">21</option>
+				        <option value="22">22</option>
+				        <option value="23">23</option>
+				        <option value="24">24</option>
+				        <option value="25">25</option>
+				        <option value="26">26</option>
+				        <option value="27">27</option>
+				        <option value="28">28</option>
+				        <option value="29">29</option>
+				        <option value="30">30</option>
+				        <option value="31">31</option>
+				        <option value="32">32</option>
+				        <option value="33">33</option>
+				        <option value="34">34</option>
+				        <option value="35">35</option>
+				        <option value="36">36</option>
+				        <option value="37">37</option>
+				        <option value="38">38</option>
+				        <option value="39">39</option>
+				        <option value="40">40</option>
+				      </select>
+				    </div>
+				  </div>
+				</div>
+				<p id="magic-sum" style="margin-bottom: 10px;"></p>
+				<table id="magic-number" class="table is-bordered">
+					
+				</table>
+				
+	    </div>
+	  </section>
+
+	  <script type="text/javascript">
+	  	//listener for selecting number
+	  	var selectNumber = document.getElementById("number");
+	  	selectNumber.addEventListener('change', function(){
+	  		const number = parseInt(this.value);
+
+			  var z = number %  2;
+			  console.log("z ="+ z);
+			 if  (z == 0) {
+				var magicSqure = doMagicSquareEven(number);
+	  			showMagicSum(number);
+			 } else {
+	  			var magicSqure = doMagicSquare(number);
+	  			showMagicSum(number);
+		  };
+	  		showMagic(magicSqure);
+	  	});
+
+	  
+	  </script>
+  </body>
+</html>
